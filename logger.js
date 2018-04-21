@@ -1,6 +1,14 @@
-const URL = 'http://mylogger.io/log';
+// (function (exports, require, module, __filename, __dirname) {
 
-const log = message => console.log(message);
+  console.log(__filename);
+  console.log(__dirname);
 
-// module.exports.log = log;
-module.exports = log;
+  const URL = 'http://mylogger.io/log';
+
+  const log = message => console.log(message);
+
+  // module.exports.log = log;
+  // exports.log = log;
+  module.exports = log;
+
+// })
